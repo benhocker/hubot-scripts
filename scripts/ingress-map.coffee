@@ -29,5 +29,4 @@ geocodeMe = (msg, query, cb) ->
       return cb "No idea. Tried using a map? https://maps.google.com/" unless response.results?.length
 
       location = response.results[0].geometry.location.lat + "," + response.results[0].geometry.location.lng
-      #cb "That's somewhere around " + location + " - https://maps.google.com/maps?q=" + location
       cb location
