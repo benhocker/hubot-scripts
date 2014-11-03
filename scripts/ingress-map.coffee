@@ -14,8 +14,8 @@ module.exports = (robot) ->
       msg.send "Please enter your Google API key in the environment variable HUBOT_GOOGLE_API_KEY."
 
     geocodeMe msg, query, (text) ->
-      msg.reply text
-    #msg.reply "https://www.ingress.com/intel?ll=36.066168,-86.928635&z=12"
+      #msg.reply text
+      msg.reply "https://www.ingress.com/intel?ll=" + text + "&z=12"
 
 geocodeMe = (msg, query, cb) ->
   msg.http("https://maps.googleapis.com/maps/api/geocode/json")
@@ -29,4 +29,5 @@ geocodeMe = (msg, query, cb) ->
       return cb "No idea. Tried using a map? https://maps.google.com/" unless response.results?.length
 
       location = response.results[0].geometry.location.lat + "," + response.results[0].geometry.location.lng
-      cb "That's somewhere around " + location + " - https://maps.google.com/maps?q=" + location
+      #cb "That's somewhere around " + location + " - https://maps.google.com/maps?q=" + location
+      cb location
