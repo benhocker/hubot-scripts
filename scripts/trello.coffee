@@ -46,7 +46,7 @@ createCard = (msg, cardName) ->
   t = new Trello(process.env.HUBOT_TRELLO_KEY, process.env.HUBOT_TRELLO_TOKEN)
   t.post "/1/cards", {name: cardName, idList: process.env.HUBOT_TRELLO_LIST}, (err, data) ->
     if err
-      msg.send "There was an error creating the card"
+      msg.send "There was an error creating the card: #{err}"
       return
     msg.send data.url
 
@@ -55,7 +55,7 @@ showCards = (msg) ->
   t = new Trello(process.env.HUBOT_TRELLO_KEY, process.env.HUBOT_TRELLO_TOKEN)
   t.get "/1/lists/"+process.env.HUBOT_TRELLO_LIST, {cards: "open"}, (err, data) ->
     if err
-      msg.send "There was an error showing the list."
+      msg.send "There was an error showing the list: #{err}"
       return
 
     msg.send "Cards in " + data.name + ":"
