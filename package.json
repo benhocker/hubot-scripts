@@ -22,7 +22,8 @@
     "hubot-ingress": "",
     "soupselect": "",
     "htmlparser": "",
-    "cheerio": ""
+    "cheerio": "",
+    "jsdom": ""
   },
   "engines": {
     "node": "0.10.x"
