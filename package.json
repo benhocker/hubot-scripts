@@ -26,7 +26,8 @@
     "jsdom": "",
     "xml2js": "",
     "underscore": "",
-    "underscore.string": ""
+    "underscore.string": "",
+    "node-trello": ""
   },
   "engines": {
     "node": "0.10.x"
