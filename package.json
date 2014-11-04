@@ -17,7 +17,7 @@
     "hubot-google-translate": "~0.1.0",
     "hubot-slack": "~2.2.0",
     "hubot-redis-brain": "0.0.2",
-    "hubot-scripts": "~2.5.16",
+    "hubot-scripts": "",
     "hubot": "~2.9.3",
     "hubot-ingress": ""
   },
