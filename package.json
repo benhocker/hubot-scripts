@@ -21,7 +21,8 @@
     "hubot": "~2.9.3",
     "hubot-ingress": "",
     "soupselect": "",
-    "htmlparser": ""
+    "htmlparser": "",
+    "cheerio": ""
   },
   "engines": {
     "node": "0.10.x"
