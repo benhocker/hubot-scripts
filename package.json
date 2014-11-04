@@ -25,7 +25,8 @@
     "cheerio": "",
     "jsdom": "",
     "xml2js": "",
-    "underscore": ""
+    "underscore": "",
+    "underscore.string": ""
   },
   "engines": {
     "node": "0.10.x"
