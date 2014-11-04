@@ -15,7 +15,7 @@ module.exports = (robot) ->
 
     geocodeMe msg, query, (text) ->
       #msg.reply text
-      msg.reply "https://www.ingress.com/intel?ll=" + text + "&z=12"
+      msg.reply "https://www.ingress.com/intel?ll=" + text + "&z=16"
 
 geocodeMe = (msg, query, cb) ->
   msg.http("https://maps.googleapis.com/maps/api/geocode/json")
