@@ -24,7 +24,8 @@
     "htmlparser": "",
     "cheerio": "",
     "jsdom": "",
-    "xml2js": ""
+    "xml2js": "",
+    "underscore": ""
   },
   "engines": {
     "node": "0.10.x"
