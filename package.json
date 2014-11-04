@@ -19,7 +19,9 @@
     "hubot-redis-brain": "0.0.2",
     "hubot-scripts": "",
     "hubot": "~2.9.3",
-    "hubot-ingress": ""
+    "hubot-ingress": "",
+    "soupselect": "",
+    "htmlparser": ""
   },
   "engines": {
     "node": "0.10.x"
